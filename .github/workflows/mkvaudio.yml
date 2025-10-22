@@ -26,8 +26,8 @@ jobs:
         run: |
           set -e
 
-          INPUT_URL="https://cdn.telugudub.store/Baahubali-2_The_Conclusion_(2017)_720p.mkv"
-          OUTPUT_FOLDER="baahubali2"
+          INPUT_URL="https://cdn.telugudub.store/Orange_(2010)_720p.mkv"
+          OUTPUT_FOLDER="orange"
           mkdir -p "$OUTPUT_FOLDER"
           OUTPUT_PATH="$OUTPUT_FOLDER/playlist.m3u8"
 
@@ -68,7 +68,7 @@ jobs:
           git config --global user.name "pothabattulavinod"
           git config --global user.email "vinodyadavpothabattula666@gmail.com"
 
-          git add baahubali2
+          git add orange
 
           if ! git diff-index --quiet HEAD; then
             git commit -m "Add HLS (video copy + Telugu 5.1 audio) [skip ci]"
